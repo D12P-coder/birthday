@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mudassir</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            font-family: 'cursive';
+            position: relative;
+        }
+
+        .title {
+            font-size: 10px;
+            color: transparent;
+            position: relative;
+            animation: revealTitle 3s linear forwards, expandText 2s linear 3s forwards, changeColor 3s linear 3s infinite alternate;
+            white-space: nowrap;
+            text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.7);
+        }
+
+        .party-phrase {
+            font-size: 10px;
+            color: transparent;
+            position: relative;
+            animation: revealPartyPhrase 3s linear 8s forwards, expandText 2s linear 8s forwards, changeColor 3s linear 8s infinite alternate;
+            white-space: nowrap;
+            text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.7);
+        }
+
+        @keyframes revealTitle {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+                color: #fff;
+            }
+        }
+
+        @keyframes revealPartyPhrase {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+                color: #fff;
+            }
+        }
+
+        @keyframes expandText {
+            0% {
+                font-size: 10px;
+            }
+            100% {
+                font-size: 40px;
+            }
+        }
+
+        @keyframes changeColor {
+            0%, 100% {
+                color: #fff;
+            }
+            25% {
+                color: #e74c3c;
+            }
+            50% {
+                color: #3498db;
+            }
+            75% {
+                color: #f1c40f;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Happy Birthday Mudassir</div>
+        <div class="party-phrase">party Leda mudassir 🥳😉</div>
+    </div>
+</body>
+</html>
